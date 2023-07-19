@@ -1,0 +1,550 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
+body{ 
+    font-size: 18px;
+    font-weight: 500;
+    --font-style-1: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+  } 
+
+img {
+  max-width: 100%;
+}
+
+  .main-container.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 376px){
+    .main-container.container {
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 376px){
+    .main-container__background-desktop{
+      display: none;
+    }
+  }
+  
+  .desktop-back{
+    display: block;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 376px) {
+    .desktop-back{
+      display: none;
+    }
+  }
+  
+  .card-block__name{
+    position: absolute;
+    z-index: 3;
+    color: #fefefe;
+    font-size: 12px;
+    font-family: var(--font-style-1);
+    left: 220px;
+    top: 420px;
+  }
+  
+  @media screen and (max-width: 376px){
+    .card-block__name{
+      position: absolute;
+      z-index: 3;
+      color: #fefefe;
+      font-size: 9px;
+      font-family: var(--font-style-1);
+      left: 70px;
+      top: 250px;
+    }
+  }
+
+  .card-block__numbers{
+    position: absolute;
+    z-index: 3;
+    color: #fefefe;
+    font-size: 28px;
+    font-family: var(--font-style-1);
+    left: 216px;
+    top: 360px;
+    font-weight: 500;
+    letter-spacing: 2px;
+   }
+
+
+  @media screen and (max-width: 376px){
+    .card-block__numbers{
+      position: absolute;
+      z-index: 3;
+      color: #fefefe;
+      font-size: 18px;
+      font-family: var(--font-style-1);
+      left: 70px;
+      top: 210px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+
+  .card-block__date-mm{
+    position: absolute;
+    z-index: 3;
+    color: #fefefe;
+    font-family: 'Montserrat';
+    left: 520px;
+    font-size: 14px;
+    top: 419px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 376px){
+    .card-block__date-mm{
+      position: absolute;
+      z-index: 3;
+      color: #fefefe;
+      font-family: 'Montserrat';
+      left: 270px;
+      font-size: 11px;
+      top: 250px;
+      font-weight: 500;
+    }
+  }
+
+  .card-block__slash{
+    position: absolute;
+    z-index: 3;
+    color: #fefefe;
+    font-family: 'Montserrat';
+    left: 540px;
+    font-size: 14px;
+    top: 420px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 376px){
+    .card-block__slash{
+      position: absolute;
+      z-index: 3;
+      color: #fefefe;
+      font-family: 'Montserrat';
+      left: 286px;
+      font-size: 11px;
+      top: 250px;
+      font-weight: 500;
+    }
+  }
+
+  .card-block__date-yy{
+    position: absolute;
+    z-index: 3;
+    color: #fefefe;
+    font-family: 'Montserrat';
+    left: 546px;
+    font-size: 14px;
+    top: 419px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 376px){
+    .card-block__date-yy{
+      position: absolute;
+      z-index: 3;
+      color: #fefefe;
+      font-family: 'Montserrat';
+      left: 291px;
+      font-size: 11px;
+      top: 250px;
+      font-weight: 500;
+    }
+  }
+
+  .card-block__cvc-text{
+    position: absolute;
+    z-index: 3;
+    color: #fefefe;
+    font-family: 'Montserrat';
+    left: 605px;
+    font-size: 16px;
+    top: 608px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 376px){
+    .card-block__cvc-text{
+      position: absolute;
+      z-index: 3;
+      color: #fefefe;
+      font-family: 'Montserrat';
+      left: 290px;
+      font-size: 11px;
+      top: 112px;
+      font-weight: 600;
+    }
+  }
+
+
+
+  .form__input-name{
+    font-family: var(--font-style-1);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 376px){
+    .form__input-name{
+      font-family: var(--font-style-1);
+      font-size: 12px;
+      font-weight: 900;
+    }
+  }
+
+  .error-message{
+    color: red;
+    font-size: 10px;
+    font-family: var(--font-style-1);
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+
+  .registration-form-block__cardholdername,
+  .registration-form-block__cardnumber
+  {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px 50px 10px 50px;
+    width: 45%;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+  }
+
+  @media screen and (max-width: 376px){
+    .registration-form-block__cardholdername,
+    .registration-form-block__cardnumber
+    {
+      display: block;
+      margin-bottom: 15px;
+      padding: 10px 0 10px 0;
+      width: 99%;
+      border-radius: 5px;
+      border: 1px solid rgb(175, 175, 175);
+    }
+  }
+
+  .registration-form-block__mm-yy-cvc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 63%;
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 376px){
+    .registration-form-block__mm-yy-cvc{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      width: 102%;
+    }
+  }
+
+  .input-wrapper--error{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-wrapper--error input.error{
+    border-color: red;
+  }
+
+  .registration-form-block__mm,
+  .registration-form-block__yy{
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 30%;
+    border: 1px solid rgb(175, 175, 175);
+  }
+
+  @media screen and (max-width: 376px){
+    .registration-form-block__mm,
+    .registration-form-block__yy{
+      padding: 10px 26px;
+      border-radius: 5px;
+      width: 20%;
+      border: 1px solid rgb(175, 175, 175);
+    }
+  }
+
+  .registration-form-block__cvc{
+    padding: 10px 35px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 40%;
+    border: 1px solid rgb(175, 175, 175);
+  }
+
+  @media screen and (max-width: 376px){
+    .registration-form-block__cvc{
+      padding: 10px 28px;
+      border-radius: 5px;
+      width: 40%;
+      border: 1px solid rgb(175, 175, 175);
+    }
+  }
+  
+  .main-container__background-mobile{
+    display: none;
+  }
+
+  @media screen and (max-width: 376px){
+    .mobile-back,
+    .main-container__background-mobile{
+      position: relative;
+      display: block;
+      width: 100%;
+      background-image: url('../images/bg-main-mobile.png');
+    }
+  }
+
+  .card-pic-1 {
+    position: absolute;
+    padding: 29px 45px 0px 30px;
+    z-index: 2;
+    left: 230px;
+    top: 469px;
+  }
+
+  @media screen and (max-width: 376px) {
+    .card-pic-1 {
+      position: relative;
+      z-index: 1;
+      padding: 40px 25px 0px 60px;
+      top: -237px;
+      left: 0;
+    }
+  }
+
+  .card-pic-2{
+    position: absolute;
+    padding: 29px 45px 0px 30px;
+    z-index: 2;
+    left: 140px;
+    top: 198px;
+  }
+
+  @media screen and (max-width: 376px){
+    .card-pic-2{
+      position: relative;
+      padding: 29px 45px 0px 30px;
+      z-index: 1;
+      left: 0;
+      top: -333px;
+    }
+  }
+
+  .card-pic-2__circle{
+    position: absolute;
+    z-index: 3;
+    border: 1px solid white;
+    padding: 22px;
+    border-radius: 30px;
+    background-color: #fefefe;
+    margin: 18px 0 0 20px;
+  }
+
+  @media screen and (max-width: 376px){
+    .card-pic-2__circle{
+      position: absolute;
+      z-index: 3;
+      border: 1px solid white;
+      padding: 18px;
+      border-radius: 30px;
+      background-color: #fefefe;
+      margin: 15px 0 0 15px;
+    }
+  }
+
+  .card-pic-2__circle-2{
+    position: absolute;
+    z-index: 3;
+    border: 1.8px solid white;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 33px 0 0 78px;
+  }
+
+  @media screen and (max-width: 376px){
+    .card-pic-2__circle-2{
+      position: absolute;
+      z-index: 3;
+      border: 1.8px solid white;
+      padding: 7px;
+      border-radius: 30px;
+      margin: 27px 0 0 60px;
+    }
+  }
+
+  .hidden-block{
+    display: none;
+  }
+
+  @media screen and (max-width: 376px){
+    .hidden-block{
+      z-index: 1;
+      position: absolute;
+      top: 300px;
+      align-items: center;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      /* display: none; */
+    }
+}
+
+@media screen and (max-width: 376px){
+  .hidden-block__check-mark{
+    position: absolute;
+    z-index: 2;
+    padding: 40px 40px;
+    border: 1.3px solid white;
+    border-radius: 40px;
+    background-color: #6c436c;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 376px){
+  .hidden-block__check-mark-svg img{
+    position: absolute;
+    z-index: 3;
+    left: 146px;
+    width: 48px;
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 376px){
+  .hidden-block__thanks{
+    font-family: var(--font-style-1);
+    font-size: 30px;
+    font-family: var(--font-style-1);
+    font-weight: 500;
+    position: absolute;
+    z-index: 2;
+    top: 130px;
+  }
+}
+
+@media screen and (max-width: 376px){
+  .hidden-block__text{
+    font-family: var(--font-style-1);
+    position: absolute;
+    z-index: 2;
+    font-size: 14px;
+    font-family: var(--font-style-1);
+    font-weight: 500;
+    top: 190px;
+  }
+}
+
+@media screen and (max-width: 376px){
+  button[type="button"]{
+  position: absolute;
+  z-index: 2;
+  top: 250px;
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(54, 22, 54);
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  width: 100%;
+  color: #fefefe;
+  font-size: 12px;
+  font-family: var(--font-style-1);
+  letter-spacing: 1px;
+}
+}
+
+  @media screen and (max-width: 376px){
+    .registration-form-block{
+      position: absolute;
+      top: 230px;
+      display: block;
+    }
+  }
+
+  .registration-form-block__form{
+    position: relative;
+    padding: 100px 25px 50px 0;
+    top: 200px;
+    left: 400px;
+    display: block;
+  } 
+ 
+
+  @media screen and (max-width: 376px){
+    .registration-form-block__form{
+      position: relative;
+      left: 0;
+      top: 0;
+      /* display: block; */
+      display: none;
+    } 
+  }
+
+
+  button[type="submit"]{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(54, 22, 54);
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    width: 61%;
+    color: #fefefe;
+    font-size: 12px;
+    font-family: var(--font-style-1);
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 376px){
+      button[type="submit"]{
+      text-align: center;
+      padding: 15px;
+      background-color: rgb(54, 22, 54);
+      border: 1px solid rgb(175, 175, 175);
+      border-radius: 5px;
+      width: 100%;
+      color: #fefefe;
+      font-size: 12px;
+      font-family: var(--font-style-1);
+      letter-spacing: 1px;
+      margin-top: 25px;
+    }
+  }

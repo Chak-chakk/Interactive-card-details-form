@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="en"></html>
+        <meta charset="utf_8" />
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+          rel="stylesheet"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>CardForm</title>
+    </head>
+    <body>
+      <!--Main container-->
+        <div class="main-container container">
+          <div class="main-container__background-desktop">
+            <img class="desktop-back" src="images/bg-main-desktop.png" alt="bg-desktop"/>
+          </div>
+          <div class="main-container__background-mobile">
+            <img class="mobile-back" src="images/bg-main-mobile.png" alt="bg-mobile"/>
+          </div>
+            <div class="card-block">
+              <div class="card-block__pictures">
+                <span id="card-block__cardholdername" class="card-block__name">JANE APPLESEED</span>
+                <span id="card-block__cardnumber" class="card-block__numbers">0000 0000 0000 0000</span>
+                <span id="card-block__date-mm" class="card-block__date-mm">00/</span>
+                <span class="card-block__slash">/</span>
+                <span id="card-block__date-yy" class="card-block__date-yy">00</span>
+                <span id="card-block__cvc" class="card-block__cvc-text">000</span>
+                <div class="card-pic-1">
+                  <img src="images/bg-card-back.png" alt="back-side-card"/>
+                </div>
+                <div class="card-pic-2">
+                  <div class="card-pic-2__circle"></div>
+                  <div class="card-pic-2__circle-2"></div>
+                  <img src="images/bg-card-front.png" alt="front-side-card"/>
+                </div>
+              </div>
+              <div class="hidden-block">
+                <div class="hidden-block__check-mark"></div>
+              <div class="hidden-block__check-mark-svg">
+                 <img src="images/Check_mark.svg.png" alt="check_mark"/>
+              </div>
+                <span class=""></span>
+                <span class="hidden-block__thanks">THANK YOU!</span>
+                <span class="hidden-block__text">We've added your card details</span>
+                <button type="button">Continue</button>
+              </div>
+              <div class="registration-form-block">
+                <div class="registration-form-block__form">
+                  <form class="form-block__posts" method="post" action="/">
+                    <div class="input-wrapper--error ">
+                        <label class="form__input-name">CARDHOLDER NAME</label>
+                        <input type="text" class="registration-form-block__cardholdername" placeholder ="e.g.Jane Applessed" name ="cardholder_name" />
+                    </div>
+                    <div class="input-wrapper--error">
+                        <label class="form__input-name">CARD NUMBER</label>
+                        <input type="text" class="registration-form-block__cardnumber" placeholder ="e.g.1234 5678 9123 0000" name="cardnumber" />
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="registration-form-block__mm-yy-cvc">
+                      <div class="input-wrapper--error">
+                        <label class="form__input-name">EXP. DATE </label>
+                        <input type="date-mm" class="registration-form-block__mm" placeholder="MM" name="date-mm"/>
+                        <div class="error-message"></div>
+                      </div>
+                        <div class="input-wrapper--error">
+                          <label class="form__input-name">  (MM/YY)</label>
+                          <input type="date-yy" class="registration-form-block__yy" placeholder="YY" name="date-yy"/>
+                          <div class="error-message"></div>
+                      </div>
+                      <div class="input-wrapper--error">
+                          <label class="form__input-name">CVC</label>
+                          <input type="number" class="registration-form-block__cvc" placeholder="e.g.123" name="cvc"/>
+                          <div class="error-message"></div>
+                      </div>
+                    </div>
+                    <button type="submit">Confirm</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
